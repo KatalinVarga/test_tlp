@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/default_faq.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" --> 
+<title>FAQs</title> 
+
+<!-- InstanceEndEditable -->
+
+
+<link href="../CSS/Style_sheet.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+.noborder {
+	text-decoration: none;
+	border: 0px;
+}
+
+.accordionItem h2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	background-color: #737373;
+	
+}
+.accordionItem h2:hover { cursor: pointer; }
+.accordionItem div { margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px; background-color: #ffffff;  }
+.accordionItem.hide h2 { color: #737373; background-color: #EAEAEA; }
+.accordionItem.hide div { display: none; }
+
+
+/* Responsive Design */
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .header img.header {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .module_name_main,
+    .module_code_main {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .icon_container {
+        width: 45%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header img.header {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .main_body_home {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .icon_container {
+        width: 40%;
+        margin: 5%;
+    }
+    
+    .icon img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer_address_text {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icon_container {
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .sdg_block_container_top > div,
+    .sdg_block_container_bottom_main > div {
+        min-width: 30px;
+    }
+    
+    .module_name_main,
+    .module_code_main {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+</style>
+
+<script>
+var accordionItems = new Array();
+function init() {
+
+      // Grab the accordion items from the page
+      var divs = document.getElementsByTagName( 'div' );
+      for ( var i = 0; i < divs.length; i++ ) {
+        if ( divs[i].className == 'accordionItem' ) accordionItems.push( divs[i] );
+      }
+
+      // Assign onclick events to the accordion item headings
+      for ( var i = 0; i < accordionItems.length; i++ ) {
+        var h2 = getFirstChildWithTagName( accordionItems[i], 'H2' );
+        h2.onclick = toggleItem;
+      }
+
+      // Hide all accordion item bodies except "Q1 learning materials"
+      for ( var i = 0; i < accordionItems.length; i++ ) {
+        accordionItems[i].className = 'accordionItem hide';
+        accordionItems[0].className = 'accordionItem';
+      }
+    }
+    
+function toggleItem() {
+      var itemClass = this.parentNode.className;
+
+      // Hide all items
+      for ( var i = 0; i < accordionItems.length; i++ ) {
+        accordionItems[i].className = 'accordionItem hide';
+      }
+
+      // Show this item if it was previously hidden
+      if ( itemClass == 'accordionItem hide' ) {
+        this.parentNode.className = 'accordionItem';
+
+      }
+    }
+    
+function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+</script>
+
+
+
+
+<link href="../HTML5_video/video-js.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body { 
+	background-color: #F28705;
+}
+</style>
+</head>
+
+<body onload="init()";>
+
+
+ <div class="container">
+    <div class="sdg_block_container_top">
+    <div class="sdg_block_1"></div>
+    <div class="sdg_block_2"></div>
+    <div class="sdg_block_3"></div>
+    <div class="sdg_block_4"></div>
+    <div class="sdg_block_5"></div>
+    <div class="sdg_block_6"></div>
+    <div class="sdg_block_7"></div>
+    <div class="sdg_block_8"></div>
+    <div class="sdg_block_9"></div>
+    <div class="sdg_block_10"></div>
+    <div class="sdg_block_11"></div>
+    <div class="sdg_block_12"></div>    
+    <div class="sdg_block_13"></div>
+    <div class="sdg_block_14"></div>
+    <div class="sdg_block_15"></div>    
+    <div class="sdg_block_16"></div>    
+    <div class="sdg_block_17"></div>    
+       
+    </div>   
+        
+
+<div class="header"><a href="../../start_here.html"><img class="header" src="../images/page_header/faq.png" width="1280" height="400" alt="header" /></a>
+	
+	
+	 
+	  <div class="mla_main_logo"><a href="https://www.mla.ac.uk/" target="_blank"><img src="../images/logos/mla_white.png" alt="MLA College logo"></a></img></div>
+	
+	
+	<div class="module_title_background_other"></div>
+	
+	<div class="module_code_other">MLA College</div>
+	
+	<div class="module_name_other">Global Sustainable Development Access Course (Plus)</div>
+	  
+	<div class="sdg_logo_other">
+   <a href="https://www.un.org/sustainabledevelopment/" target="_blank"><img src="../images/logos/sdg_logo_alt.png" alt="UN Sustainable Development Goals logo"></a></img>
+    </div>
+	
+	
+  </div>
+
+<div class="sdg_block_container_bottom_other">
+    <div class="sdg_block_1"></div>
+    <div class="sdg_block_2"></div>
+    <div class="sdg_block_3"></div>
+    <div class="sdg_block_4"></div>
+    <div class="sdg_block_5"></div>
+    <div class="sdg_block_6"></div>
+    <div class="sdg_block_7"></div>
+    <div class="sdg_block_8"></div>
+    <div class="sdg_block_9"></div>
+    <div class="sdg_block_10"></div>
+    <div class="sdg_block_11"></div>
+    <div class="sdg_block_12"></div>    
+    <div class="sdg_block_13"></div>
+    <div class="sdg_block_14"></div>
+    <div class="sdg_block_15"></div>    
+    <div class="sdg_block_16"></div>    
+    <div class="sdg_block_17"></div>    
+       
+    </div> 
+
+
+
+<!-- InstanceBeginEditable name="main_body" -->
+<div class="main_body">
+<div class="heading_2_under_image">Frequently Asked Questions</div>
+    
+    
+    
+    
+    <div class="heading_3_blue">
+        STUDENT AND ACADEMIC SUPPORT
+    </div>
+    
+    
+    
+    <div class="page_text">
+        <div class="accordionItem">
+  <h2>How should I work through the learning material?</h2>
+  <div>
+    <p>The course team highly recommend that you undertake the course materials and each lecture in order. We’ve put the learning material together very carefully with this in mind, and during the creation of your course we have completed extensive testing and have designed the course to be followed in a linear way.</p>
+    <p>&nbsp;</p>
+    <p>Each topic is designed to build your knowledge and to logically lead you to the next topic. If you jump to later topics without first studying earlier ones you may disadvantage yourself and find learning more difficult. There are a number of concepts that are introduced early on and then built upon in later lectures.</p>
+    <p>&nbsp;</p>
+    <p>We have designed your learning environment to ensure that you can access any part of it for reference after you’ve finished the module, but when you are studying it for the first time, we recommend that you don’t click through it in a random fashion.</p>
+  </div>
+</div>
+<div class="accordionItem">
+  <h2>How long will it take to complete this module?</h2>
+  <div>The course team has designed the module very carefully to take approximately 13 weeks of part-time study (eight weeks for access courses).</div>
+</div>
+<div class="accordionItem">
+  <h2>What if I do not understand a topic? Can I contact someone if I require some extra help?</h2>
+  <div>
+    <p>Do not worry if you do not understand a topic or concept first time round. People learn at different speeds and in different ways. We hope that the narrated lecture slides will give you the opportunity to replay certain topics which you may not understand at first.</p>
+    <p>&nbsp;</p>
+    <p>You will probably find that by revisiting the material and being able to pause and listen to certain sections as well as re-reading the lecture transcripts will help you. Distance learning can often be tricky and we would encourage you to try your best to understand a topic, but if you are really stuck we’d suggest the following course of action:</p>
+    
+    <div class="faq_indent">1) Post a message on the online discussion area. This should be your first port of call, and you might find that other students are experiencing the same problem, or have already solved it and can help. The course tutor will be monitoring discussions, just to make sure that there is no fundamentally incorrect information being shared.
+    <p>&nbsp; </p>
+    <p>2) If the community of students on the online discussion area can’t help, then contact your course tutor.</p></div>
+  </div>
+</div>
+<div class="accordionItem">
+  <h2>How much extra reading am I expected to do?</h2>
+  <div>
+    It is very difficult to put an exact figure on the amount of reading that is necessary. It depends on your existing knowledge as well as what you hope to gain from the course. In general the more the better, but you must give yourself enough time to undertake the lectures and assessment. The more you can engage with the subject the more you will get out of it.<br>
+&nbsp;</div>
+</div>
+<div class="accordionItem">
+  <h2>Will I have any interaction with other students on this course?</h2>
+  <div>
+    <p>Distance learning courses often make it difficult to interact with other members of your course. However, we have designed your course to incorporate a certain amount of collaborative work.</p>
+    <p>&nbsp;</p>
+    <p>You will have the opportunity to participate in online discussions where you will be able to discuss your work and learning with other students.</p></div>
+</div>
+<div class="accordionItem">
+  <h2>How is the module assessed?</h2>
+  <div>
+    <p>Each topic for this module has an element of both formative and summative assessment.</p>
+    <p>&nbsp;</p>
+    <p>Formative assessment will be a collection of questions to test your knowledge of the presentation you have just watched. These are designed to test how well you have understood the topic and enable you to identify any areas you may need to revisit. Formative assessment does not form part of your final mark.</p>
+    <p>&nbsp;</p>
+    <p>The summative assessment will form part of your final mark, and you will be required to submit coursework containing all your answers to the assessment document.</p>
+    <p><a href="academic_skills.html">Your assessment documents can be found here</a>.</p>
+   </div>
+</div>
+<div class="accordionItem">
+  <h2>When and how do I submit my coursework?</h2>
+  <div>
+    <p>Please ensure you read the instructions provided within your assessment document. Everything you need to know in order to submit your coursework is provided within the assessment document. You MUST complete and return your assessment cover sheet with your coursework. If you have any concerns or questions regarding this, please contact your tutor.</p>
+    <p>&nbsp;</p>
+    <p>If you have any questions you would like to ask about this please do not hesitate to <a href="contact_us.html">contact us</a>.</p>
+  </div>
+</div>
+<div class="accordionItem">
+  <h2>What shall I do if I think I may have to submit my work late?</h2>
+  <div>
+    <p>The course team appreciates that working patterns in the offshore industry mean that it may be difficult to submit your work on one particular day. We’ll try to be as flexible as possible, however, there are specific deadlines that have to be set.</p>
+    <p>&nbsp;</p>
+    <p>If you are concerned about being able to submit your coursework please contact your tutor as soon as possible to discuss your options.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="accordionItem">
+  <h2>I am behind the suggested schedule of progress through the module. What should I do?</h2>
+  <div>
+    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal">If you are worried about your studies please contact your tutor as soon as possible to discuss your options.</p>
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+<div class="accordionItem">
+  <h2>I seem to be far ahead of the suggested schedule of progress. Is it OK for me to finish the course early?</h2>
+  <div>
+    <p>You can proceed faster if you have the time, but we’d suggest that if you find yourself flying through the material, then get please contact your course tutor as soon as possible.</p>
+  </div>
+</div>
+        
+        
+          </div>
+    <div class="heading_3_blue">
+        TECHNICAL SUPPORT
+    </div>
+<div class="page_text">
+
+<div class="accordionItem">
+  <h2>What should I do if I am having technical issues?</h2>
+  <div>
+    <p>Please contact us as soon as possible using the details found on the <a href="contact_us.html">contact page</a>.</p>
+    <p>&nbsp;</p>
+    <p>Please include your name, and a contact number if possible. Please also detail the problems you are having in as much detail as possible. If you can attach any screenshots of any error messages or what you are experiencing it will help us solve the problem quicker.</p>
+  </div>
+</div>
+<div class="accordionItem">
+  <h2>I have a question that is not in these FAQs; who should I contact?</h2>
+  <div>
+    <p>If you have read through the help section within the TLP and cannot find the answer there, or within this FAQ section, please <a href="contact_us.html">contact us</a> providing as much detail of your query as possible. </p>
+  </div>
+</div>
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+<!-- InstanceEndEditable -->
+<div class="home_container"><div class="home"><a href="../../start_here.html" class="nav_button">home</a></div><div class="home"><a href="my_module.html" class="nav_button">my module</a></div></div>
+
+	<div class="footer">
+	<div class="footer_logo_mla"><a href="https://www.mla.ac.uk/" target="_blank"><img src="../images/logos/mla_footer.png" alt="MLA College logo"></a></img></div>
+	<div class="footer_address_text">
+		<strong>MLA College</strong><br />
+	The Merchant<br />
+	St Andrew Street<br />
+	Plymouth<br />
+	Devon PL1 2AX
+	</div>
+   </div>
+	
+	
+</div>
+</body>
+<!-- InstanceEnd --></html>
