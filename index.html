@@ -143,6 +143,10 @@
     font-family:'Unbounded'; font-weight:700;
     font-size:clamp(28px, 4vw, 42px); margin:0 0 36px; letter-spacing:-0.01em;
   }
+  .earlier-work-title{
+  margin-top:64px !important;
+  margin-bottom:28px !important;
+}
 
   /* ---------- about (lavender block) ---------- */
   .about-block{ background:var(--lavender); }
@@ -201,7 +205,60 @@
   }
   .player-inner iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
   .reel-caption{ margin-top:20px; font-size:14.5px; color:#BDB6E0; max-width:56ch; }
+  /* ---------- portfolio link ---------- */
+  .portfolio-preview{
+    display:block;
+    position:relative;
+    margin-top:40px;
+    border-radius:24px;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid rgba(255,255,255,.12);
+    text-decoration:none;
+    box-shadow:0 12px 40px rgba(0,0,0,.18);
+  }
 
+  .portfolio-preview img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:transform .4s ease;
+  }
+
+  .portfolio-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(18,14,41,.72);
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+
+  .portfolio-overlay span{
+    background:var(--lime);
+    color:var(--ink);
+    padding:13px 22px;
+    border-radius:999px;
+    font-family:'Unbounded';
+    font-size:12px;
+    font-weight:600;
+  }
+
+  .portfolio-preview:hover img{
+    transform:scale(1.025);
+  }
+
+  .portfolio-preview:hover .portfolio-overlay{
+    opacity:1;
+  }
+
+  .portfolio-link-caption{
+    margin-top:14px;
+    font-size:14.5px;
+    color:#BDB6E0;
+  }
   /* ---------- contact ---------- */
   .contact-block{ background:var(--coral); color:#fff; }
   .contact-grid{ display:flex; justify-content:space-between; align-items:flex-end; gap:32px; flex-wrap:wrap; }
@@ -239,7 +296,7 @@
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Toolkit</a>
-      <a href="#reel">Showreel</a>
+      <a href="#reel">Work</a>
     </nav>
     <a class="nav-cta" href="#contact">Say hi</a>
   </div>
@@ -253,7 +310,7 @@
     <h1 class="hero-title">Hi, I'm Kati<br><span class="l2">making ideas move.</span></h1>
     <p class="hero-sub">
       <b>Digital Production Assistant</b> at MLA College — video editor, motion designer and
-      visual creative, currently leveling up in UX/UI and front-end code.
+      visual creative, currently levelling up in UX/UI and front-end code.
     </p>
     <div class="hero-tags">
       <span class="tag fill-violet">Premiere Pro</span>
@@ -340,10 +397,10 @@
   <div class="wrap">
     <div class="reel-top">
       <div>
-        <div class="sec-label">Showreel</div>
+        <div class="sec-label">Portfolio</div>
         <h2 class="sec-title">Recent work, in motion</h2>
       </div>
-      <span class="reel-badge">🎬 15 min reel</span>
+      <span class="reel-badge">🎬 Samples</span>
     </div>
 
     <div class="player">
@@ -354,13 +411,35 @@
         -->
         <iframe
           src="https://www.youtube.com/embed/VIDEO_ID"
-          title="Kati Varga — Showreel"
+        title="Kati Varga — Showreel"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
       </div>
     </div>
     <p class="reel-caption">A run through recent edits, motion graphics and design work — from Premiere Pro timelines to After Effects animation.</p>
+    <h2 class="sec-title earlier-work-title">Earlier work</h2>
+
+    <a
+      href="https://myideas.artstation.com/projects"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="portfolio-preview"
+    >
+      <img
+        src="imgs/artstation-preview.png"
+        alt="Preview of Kati Varga's ArtStation portfolio"
+      >
+
+      <div class="portfolio-overlay">
+        <span>View ArtStation Portfolio ↗</span>
+      </div>
+    </a>
+
+    <p class="portfolio-link-caption">
+      A selection of digital design, 3D, illustration and multimedia work.
+    </p>
+
   </div>
 </section>
 
@@ -370,7 +449,8 @@
       <h2 class="contact-title">Let's make something worth watching.</h2>
       <div class="contact-links">
         <a class="contact-link" href="mailto:vkatiful@gmail.com"><span class="swatch"></span>vkatiful@gmail.com</a>
-        <a class="contact-link" href="https://www.linkedin.com/in/kati-varga-6971b4289/"><span class="swatch"></span>linkedin.com/in/kati-varga</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/kati-varga-6971b4289/"  target="_blank" 
+  rel="noopener noreferrer"><span class="swatch"></span>linkedin.com/in/kati-varga</a>
       </div>
     </div>
   </div>
